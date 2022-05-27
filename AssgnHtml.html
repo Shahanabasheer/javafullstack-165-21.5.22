@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Feedback Form</title>
+<style>
+fieldset{
+	border: 1 px solid black;
+}
+</style>
+</head>
+<body>
+	<h1>Feedback Form</h1>
+	<form action="">
+		<fieldset>
+		<legend>Login Details</legend>
+		
+		<ul type="circle">
+			<li>Name:<input type="text" name="name"></li>
+			<li>Email:<input type="email" name="email"></li>
+			<li>Password:<input type="password" name="password"></li>
+		</ul>
+		</fieldset>
+		<fieldset>
+		<legend>Your Feedback</legend>
+		<ul type="disc">
+			<li>Please check all the emotions apply to you:
+
+				<ul type="circle">
+					<li>Angry<input type="checkbox" id="emotion" name="emotion"
+						value="angry"></li>
+					<li>Sad<input type="checkbox" id="emotion" name="emotion"
+						value="sad"></li>
+					<li>Happy<input type="checkbox" id="emotion" name="emotion"
+						value="happy"></li>
+					<li>Ambivalent<input type="checkbox" id="emotion"
+						name="emotion" value="ambivalent"></li>
+				</ul>
+			</li>
+			<li>How satisfied were you with your service?
+				<ul type="circle">
+					<li>Very satisfied<input type="radio" id="rate" name="rate"
+						value="5"></li>
+					<li>Satisfied<input type="radio" id="rate" name="rate"
+						value="4"></li>
+					<li>Did't care<input type="radio" id="rate" name="rate"
+						value="3"></li>
+					<li>Dissatisfied<input type="radio" id="rate" name="rate"
+						value="2"></li>
+					<li>Very dissatisfied<input type="radio" id="rate" name="rate"
+						value="1"></li>
+				</ul>
+			</li>
+
+			<li>Further comments:<textarea rows="3" cols="20"></textarea>
+			</li>
+			<li>Bio photo<input type="file" name="photo"></li>
+			<li>Location visited
+			 <select>
+					<option value="place">Select location</option>
+					<option value="Chennai">Chennai</option>
+					<option value="Banglore">Banglore</option>
+					<option value="Kochi">Kochi</option>
+			</select>
+			</li>
+		</ul>
+
+		<input type="submit" name="submit" value="submit">
+		</fieldset>
+	</form>
+	
+</body>
+</html>
